@@ -4,6 +4,9 @@ Let's do some SVG and d3 stuff
 Tips
 Try opening the svg file in a browser, should show the pic, and if error chrome adresses it.
 
+Advanced SVG
+https://youtu.be/dv2TvTXQ4FQ
+
 Sketch, export as SVG
 https://www.youtube.com/watch?v=vvuH6qS2M5Q
 
@@ -35,5 +38,8 @@ https://www.youtube.com/watch?v=vvuH6qS2M5Q
 Mousover tutorial with bars
 http://www.petercollingridge.co.uk/tutorials/svg/interactive/mouseover-effects/
 
-push test1
-push testi 2
+Frågor
+- Dubbla onmouseover?
+onmouseover="this.setAttribute('r','2em')"
+
+- Mouseover verkar inte med ljusa bollar?
