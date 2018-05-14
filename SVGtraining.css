@@ -1,0 +1,39 @@
+.space {
+  /* En rem höjd på en bokstav vid html element. EM höd på typsnitt hos förälder, en rem i i h1 är gnaska stor.*/
+  padding-top: 1rem;
+}
+
+.shape {
+  fill: hotpink; stroke: steelblue; stroke-width: 0.5em;
+}
+
+/* HOw to and how to use from the file created? */
+/* #forewords {
+  background: lightgrey url('data:image/svg+xml,<svg width="160" height="160" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="80" style="fill:"black";"/><rect x="80" y="80" width="80" height="80" style="fill:#fff;"/></svg>');
+  background-size: 160px;
+} */
+
+#forewords {
+  /* background: lightgrey; */
+  background-image: url('SVGChessBoard.svg');
+  background-size: 60px;
+}
+
+#figures {
+  background: lightgrey url('data:image/svg+xml,<svg height="10" width="10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" fill="hotpink" r="4" stroke="steelblue" stroke-width="0.5" /></svg>');
+  background-size: 2em;
+}
+
+#grids {
+  background: lightblue;
+}
+
+#gridSVG {background-color: tomato}
+#gridSVG { border: 1px solid black; }
+
+
+/* HOVer */
+/* Not working on second Circle */
+#circle1:hover {
+  fill: yellow;
+}

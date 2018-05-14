@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="SVGtraining.css">
+    <link rel="stylesheet" type="text/css" href="SVGtraining.js">
+    <title></title>
+  </head>
+
+  <body>
+    <section id="forewords">
+      <h1>SVG Tools</h1>
+      <p>Inkscape URL: www.inkscape.org One of the most important tools for a graphics format is a decent drawing program. Inkscape offers state-of-the-art vector drawing, and it's open source. Moreover, it uses SVG as its native file format. To store Inkscape
+        specific data, it extends the SVG file with elements and attributes in a custom namespace, but you can also choose to export as plain SVG.</p>
+      <div class="space">
+      </div>
+      <p>Adobe Illustrator URL: www.adobe.com/products/illustrator/ Before Adobe acquired Macromedia, it was the most prominent promoter of SVG. From this time stems the good support of SVG in Illustrator. However, the resulting SVG often shows some quirks,
+        that make it necessary to post-process it for general applicability.</p>
+      <div class="space">
+      </div>
+    </section>
+
+    <section id="figures">
+      <h1>SVG Examples</h1>
+
+      <svg height="200" width="200">
+      <circle id="circle1" cx="50" cy="50" r="40" fill="#000" />
+    </svg>
+
+    <img src="SVGtraining.svg" alt="">
+
+    <img src="SVGChessBoard.svg" alt="">
+    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">>
+      <rect width="80" height="80" style="fill:#000;"/>
+      <rect x="80" y="80" width="80" height="80" style="fill:#fff;"/>
+    </svg>
+
+      <div class="space">
+      </div>
+
+      <img src="SVGtraining.svg" alt="">
+
+      <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" fill="hotpink" r="95" stroke="steelblue" stroke-width="10" />
+    </svg>
+
+      <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+      <rect fill="hotpink" height="180" stroke="steelblue" stroke-width="10" width="180" x="10" y="10" />
+    </svg>
+
+      <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+      <polygon fill="hotpink" points="190,190 100,10 10,190" stroke="steelblue" stroke-width="10" />
+    </svg>
+
+      <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+      <line stroke="steelblue" stroke-width="10" x1="10" x2="190" y1="10" y2="190" />
+    </svg>
+
+      <svg height="10em" width="10em" xmlns="http://www.w3.org/2000/svg">
+      <text fill="#000" font-family="sans-serif" font-size="1em" x="1em" y="9em">Lite text i svg</text>
+    </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+      <circle cx="5em" cy="5em" r="4em" class="shape"></circle>
+    </svg>
+
+    </section>
+
+
+    <div class="space">
+    </div>
+
+
+    <!-- //Small ones and TOMATO GRiD -->
+    <section id="grids">
+      <svg width="200" height="80">
+      <rect x="10" y="10" width="30" height="30" />
+      <rect x="60" y="10" rx="10" ry="10" width="30" height="30" />
+      </svg>
+
+      <div class="space">
+      </div>
+
+      <div class="boards" style="text-align:center;">
+      <!-- 3 CHESS BOARDS -->
+      <svg width="160" height="160">
+        <rect width="80" height="80" style="fill:#000;"/>
+        <rect x="80" y="80" width="80" height="80" style="fill:#fff;"/>
+      </svg>
+
+      <svg width="160" height="160">
+        <rect width="80" height="80" style="fill:#000;"/>
+        <rect x="80" y="80" width="80" height="80" style="fill:#fff;"/>
+      </svg>
+
+      <svg width="160" height="160">
+        <rect width="80" height="80" style="fill:#000;"/>
+        <rect x="80" y="80" width="80" height="80" style="fill:#fff;"/>
+      </svg>
+
+      </div>
+
+      <div id="grid" style="width: 101px; height: 101px;">
+        <svg id="gridSVG" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+      <pattern id="smallGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+        <path d="M 22 0 L 0 0 0 22" fill="none" stroke="rgba(231, 230, 230, .5)" stroke-width="2" />
+      </pattern>
+
+      <!-- CAN BE USED FOR QUADRANTS, CHANGE FILL ID IN <rect> BELOW TO REFLECT THIS ID IF NEEDED -->
+
+     <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+        <rect width="100" height="100" fill="url(#smallGrid)" />
+
+      </pattern>
+
+      </defs>
+      <rect width="100px" height="100px" fill="url(#smallGrid)" />
+        </svg>
+      </div>
+
+    </section>
+
+</html>
